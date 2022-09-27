@@ -1,0 +1,22 @@
+@media only screen and (max-width:400px) {
+    .container {
+        margin-top: 1rem;
+        padding: 0px;
+    }
+    .service__card {
+        grid-column: span 3;
+    }
+    .client__card {
+        grid-column: span 3;
+    }
+    .team-card {
+        grid-column: span 3;
+    }
+    .footer__list {
+        grid-column: span 4;
+    }
+    .footer__nav {
+        flex-direction: column;
+        gap: 3;
+    }
+}
