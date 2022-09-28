@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/responsiveness.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsiveness.css">
     <title>KMarketer</title>
 </head>
 <body>
@@ -38,7 +38,38 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+                <ul class="header__icons">
+                    <li class="header__icons-item">
+                        <a class="link link--disabled" href="#">
+                            <img src="./assets/svgs/search.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__icons-item">
+                        <a class="link link--disabled" href="#">
+                            <img src="./assets/svgs/cat.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__icons-item">
+                        <a class="link link--disabled" href="#">
+                            <img src="./assets/svgs//bugger.svg" alt="">
+                        </a>
+                    </li>
+                </ul>            
+            </div> 
+            <ul class="header__navigation header__navigation--mobile">
+                <li class="header__navigation-item">
+                    <a class="link link--disabled" href="#">Home</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="link link--disabled" href="#">Product</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="link link--disabled" href="#">Pricing</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="link link--disabled" href="#">Contact</a>
+                </li>
+            </ul> 
             <div class="header__content">
                 <h1 class="section-header section-header--large " >
                     Experts are here solve 
@@ -164,12 +195,14 @@
             </div>
             <div class="main-video">
                 <div class="main-video__image">
-                    <img class="main-video__video" src="./assets/svgs/video.svg">
+                    <div class="main__video-play main__video-play--rounded-full">
+                        <img src="./assets/svgs/playVector.svg" alt="Play icon">
+                    </div>
                 </div>
             </div>
         </div>
     
-        <div class="container">
+        <div class="container container--spacing-large">
             <h1 class="section-header section-header--medium section-header--center" >
                 What Clients Say
             </h1>
@@ -303,7 +336,7 @@
                 <div class="contact-us__title">
                     Contact Us
                 </div>
-                <h1 class="section-header section-header--spacing-sm" >
+                <h1 class="section-header section-header--spacing-sm section-header--mobile-left" >
                     Make an Appointment
                 </h1>
             </div>
@@ -318,7 +351,7 @@
                         <option value="">04:00 Available</option>
                     </select>
                     <textarea class="contact-us__field" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button class="button button--primary button--rounded button--small" >
+                    <button class="button button--primary button--rounded button--small button--mobile-size-full" >
                         Book Appointment
                     </button>
                 </form>
@@ -335,7 +368,7 @@
                         The quick fox jumps over the lazy dog
                     </div>
                 </div>
-                <button class="button button--primary button--rounded button--small" >
+                <button class="button button--primary button--rounded button--small button--mobile-size-full" >
                     contact us
                 </button>
             </div>
@@ -444,7 +477,7 @@
                                 </div>
                             </li>
                             <li class="footer-navigation__item">
-                                <a class="link link--disabled" href="#">Watch a Demo</a>
+                                <a class="link link--disabled" href="#">Lorem impsum dolor amit</a>
                             </li>
                         </ul>                 
                     </div>  
