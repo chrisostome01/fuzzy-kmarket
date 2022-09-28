@@ -16,7 +16,6 @@
 .header {
     width: 100%;
 }
-
 .header__item {
     display: flex;
     justify-content: space-between;
@@ -36,12 +35,18 @@
     font-size: 20px;
     color: #737373;
 }
-.header__action{
+.header__button-container{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     padding: 20px;
+}
+.header__navigation {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 16px;
 }
 /* ====== end: Header ======== */
 
@@ -86,12 +91,12 @@
     border-top-right-radius: 6px ;
     border-bottom-right-radius: 6px ;
 }
-.button--size-small {
+.button--small {
     width: 200px;
 }
 /* ========= end:button ======= */
 
-/* ==== start:site header ==== */
+/* ==== start:section header ==== */
 .section-header{
     color:#252B42;
     font-weight: 800;
@@ -109,7 +114,7 @@
 .section-header--spacing-sm {
     margin-top: 1rem;
 }
-/* ==== end:site header ====== */
+/* ==== end:section header ====== */
 
 /* ======= start:logo ======== */
 .logo {
@@ -123,20 +128,6 @@
 }
 /* ======= end:logo ========== */
 
-/* ==== start:navigation ====== */
-.navigation {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 16px;
-}
-.navigation--col {
-    flex-direction: column;
-}
-.navigation--right {
-    align-items: baseline;
-}
-/* ====== end:navigation ====== */
 
 /* ====== start:link ========== */
 .link {
@@ -149,8 +140,8 @@
 }
 /* ====== end:link ========== */
 
-/* ==== start:site conent === */
-.site-content {
+/* ==== start:section conent === */
+.section-content {
     text-align: center;
     font-size: 16px;
     color: #737373;
@@ -158,7 +149,7 @@
     margin-bottom: 40px;
     font-weight: 500;
 }
-/* ==== end:site content ==== */
+/* ==== end:section content ==== */
 
 /* ====== start:service-card ===== */
 .service {
@@ -203,7 +194,7 @@
     background-color: #0b353d;
     position: relative;
 }
-.video__image {
+.main-video__image {
     position: absolute;
     top: -40%;
     left: 50%;
@@ -213,15 +204,13 @@
 .video__play {
     z-index: 30;
 }
-/* ========= end:video =========== */
-
-/* ======== start:site-video ===== */
 .site-video {
     width: 100%;
     height: 350px;
     width: 600px;
     z-index: -30;
 }
+
 /* ========== end:site-video ===== */
 
 /* ===== start: client cards ===== */
@@ -236,19 +225,19 @@
     background-color: white;
     border-radius: 6px;
 }
-.client__description {
+.client__card-description {
     color: rgb(111, 111, 111);
     margin: 18px 0px;
 }
-.client__profile {
+.client__card-profile {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.client__username {
+.cleint__card-username {
     color: #FFA62B;
 }
-.client__title {
+.cleint__card-title {
     margin-top: 3px;
     color: rgba(61, 61, 61, 0.805);
     font-weight: bold;
@@ -306,6 +295,21 @@
 .footer__description--dark {
     background-color: #16697A;
 }
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 16px;
+}
+.footer-navigation--col {
+    flex-direction: column;
+}
+.footer-navigation--right {
+    align-items: baseline;
+}
+.footer__container {
+    padding: 6rem 85px;
+}
 /* =========== End:Footer ====== */
 
 /* ===== start:social links ==== */
@@ -328,7 +332,7 @@
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
-.team-card {
+.team__card {
     border: 1px solid rgba(128, 128, 128, 0.358);
     border-radius: 2px;
     display: flex;
@@ -336,17 +340,17 @@
     align-items: center;
     gap: 12px;
 }
-.team-card__image {
+.team__card-image {
     width: 100%;
     height: 200px;
 }
-.team-card__name {
+.team__card-name {
     font-size: 14px;
     font-weight: 800;
     text-align: center;
     margin-top: 12px;
 }
-.team-card__title {
+.team__card-title {
     font-size: 17px;
     text-align: center;
     font-size: 12px;
@@ -380,4 +384,30 @@
     margin: 12px 3px;
     outline: none;
 }
+.contact-us__container {
+    margin-top: 1rem;
+    padding: 0rem 85px;
+}
 /* ===== end: contact us ======= */
+
+/* ===== start: highlight ====== */
+.highlight {
+    background-color: white;
+
+}
+.highlight__container {
+    padding: 2rem 85px;
+    display: flex;
+    justify-content: space-between;
+}
+.highlight__description-title {
+    color: #252B42;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+.highlight__description-header {
+    color: #737373;
+    font-size: 13px;
+}
+/* ======= end: highlight ====== */

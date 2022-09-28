@@ -9,7 +9,7 @@
     .client__card {
         grid-column: span 3;
     }
-    .team-card {
+    .team__card {
         grid-column: span 3;
     }
     .footer__list {
