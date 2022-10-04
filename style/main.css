@@ -222,7 +222,7 @@
     justify-content: center;
 
 }
-.main__video-play {
+.main-video__play {
     z-index: 30;
     padding: 2rem;
     background-color: #00A0C1;
@@ -230,7 +230,7 @@
     justify-content: center;
     align-items: center;
 }
-.main__video-play--rounded-full {
+.main-video__play--rounded-full {
     border-radius: 50%;
 }
 /* ========== end:site-video ===== */
@@ -256,10 +256,10 @@
     align-items: center;
     gap: 12px;
 }
-.cleint__card-username {
+.client__card-username {
     color: #FFA62B;
 }
-.cleint__card-title {
+.client__card-title {
     margin-top: 3px;
     color: rgba(61, 61, 61, 0.805);
     font-weight: bold;
